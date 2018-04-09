@@ -2,23 +2,10 @@
 #cas
 convolucion(F1T,F2T):=
 BEGIN
-//para crear un programa en el cas
-//se crea desde la calculadora
-//y cuando nos pide el nombre
-//marcamos el check donde dice CAS
-
-//le metemos cada funcion separadas por comas en el dominio del tiempo.
-
 
 LOCAL HT;
 msgbox("recordar: las condiciones iniciales deben ser 0 y no haber otras fuentes antes o sea");
 msgbox("no deben haber fuentes alimentando al circuito distintas de la de entrada. Vinput");
-
-
-
-//principio de funcionamiento: el producto de funciones en el dominio de la frecuencia luego invertido
-//al dominio del tiempo es igual a la funcion de transferencia en el dominio del tiempo
-//(esto es en palabras, pero eso es una formula matematica.)
 
 HT:=invlaplace((laplace(F1T))*(laplace(F2T)));
 return "H(t)"=HT
