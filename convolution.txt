@@ -20,8 +20,6 @@ msgbox("no deben haber fuentes alimentando al circuito distintas de la de entrad
 //al dominio del tiempo es igual a la funcion de transferencia en el dominio del tiempo
 //(esto es en palabras, pero eso es una formula matematica.)
 
-//CONV:=invlaplace((CAS.laplace(F1T,{X}))*(CAS.laplace(F2T,{X})));
-
 HT:=invlaplace((laplace(F1T))*(laplace(F2T)));
 return "H(t)"=HT
 
