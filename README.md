@@ -1,2 +1,2 @@
-# electrical-engineering-software-for-the-hp-prime
-electrical engineering software for the hp prime
+# hp-prime-convolution-function
+hp prime convolution function
