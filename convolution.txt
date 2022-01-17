@@ -4,8 +4,8 @@ convolucion(F1T,F2T):=
 BEGIN
 
 LOCAL HT;
-msgbox("recordar: las condiciones iniciales deben ser 0 y no haber otras fuentes antes o sea");
-msgbox("no deben haber fuentes alimentando al circuito distintas de la de entrada. Vinput");
+msgbox("recordatorio: las condiciones iniciales deben ser 0, no haber otras fuentes antes o sea");
+msgbox("no deben haber fuentes alimentando al circuito distintas a la entrada. Vinput");
 
 HT:=invlaplace((laplace(F1T))*(laplace(F2T)));
 return "H(t)"=HT
